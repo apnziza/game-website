@@ -1,0 +1,57 @@
+<!DOCTYPE html> 
+	<html>
+	<head>
+		<title> Wonder Games </title>
+		<!-- Link to external style sheet -->
+		<link href="css/stylesheet1.css" type="text/css" rel="stylesheet">
+	</head>
+		
+	<body>
+		<!-- Displays the navigation bar and the banner -->
+		<div class="banner">
+			<img src="css/1.png" alt="Logo"/>
+			<h1> Quiz Time </h1>
+		</div>
+		<div class="navigation">
+			<a href="index.html"> Home </a>
+			<a href="Ranking.html"> Ranking </a>
+			<a href="Login.html"> Login </a>
+			<a class="selected" href="register.html"> Register </a>
+		</div>
+		<script src = "js/register.js"></script>
+		<center>
+		  <div class="container" >
+			<h1>Register</h1>
+			<center>
+			<hr>
+			<label for="uname"><b>Username</b></label>
+			<input type="text" name="uname" placeholder="Please enter your username" id="uname" required>
+			<br>
+			<label for="phone"><b>Telephone</b></label>
+			<input type="number" name="phone" id="phone" placeholder="Please enter your telephone number" pattern="[0-9]{8}" required>
+			<br>
+			<label for="email"><b>Email</b></label>
+			<input type="text" name="email" id="email" placeholder="Please enter your email" required>
+			<br>
+			<label for="birthday"><b>Birthday</b></label>
+			<input type="date" name="birthday" id="birthday" required>  
+			<br>
+			<label for="address"><b>Street Address</b></label>
+			<input type="text" name="address" id="address" placeholder="Please enter your street address" required>
+			<br>
+			<label for="country"><b>Country</b></label>
+			<input type="text" name="country" id="country" placeholder="Please enter your country" required>
+			<br>
+			<label for="psw"><b>Password</b></label>
+			<input type="password" autocomplete="none" name="psw" placeholder="Please enter your password" id="psw"  maxlength="8" size="8" required>
+			<br>
+			<label for="psw-repeat"><b>Repeat Password</b></label>
+			<input type="password" name="psw-repeat" placeholder="Please enter your password again." id="psw-repeat"  maxlength="8" size="8"required>
+			<center><button type ="submit" id="MyButton">Register</button></center>
+			<p id="Result"></p>
+			
+		  </div>
+		</center>
+		<footer> Agnes Paullate Nyiranziza M00696201</footer>
+</body>
+</html>

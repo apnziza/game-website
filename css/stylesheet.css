@@ -1,0 +1,184 @@
+/* Add style to the banner/header of the site*/
+.banner img {
+  float: left;
+  width: 120px;
+  height: 120px;
+  background: #555;
+}
+.banner h1 {
+  margin: 10px 0px 0px 0px;
+  text-align: center;
+}
+/* Style design for the navigation bar*/
+.navigation{
+    text-align: center;
+    padding: 10px;
+	background-color:  #655762 ;
+	margin: 100px 0px 0px 0px;
+}
+a:hover {
+  background-color: gray;
+  padding: 10px;
+}
+
+/* Style design for slide show */
+* {box-sizing: border-box;}
+.mySlides {display: none;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 900px;
+  position: relative;
+  margin: auto;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* Style design for links in navigation bar and other links on website*/
+a{
+    margin: 10px;
+    color: white;
+}
+/*Style design for selected page on navigation bar*/
+.selected {
+    width: 800px;
+    background-color: #330000;
+    padding: 10px;
+}
+/* Add style to the background of the site*/
+ body {
+	background-image: url("question.jpg");
+	background-size: cover;
+}
+/* Add style to the images on the site.*/
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+  height: 150px;
+  vertical-align: left;
+  margin: 10px 0px 30px 50px;
+}
+/* Add style to all headings with h1*/
+h1 	{
+	color: #FFFFFF; 
+	text-align: center;
+	text-shadow: 2px 2px black;
+	text-decoration: blink;
+	margin: 0px 20px 30px 20px;
+	}
+/* Add style to all headings with h2*/
+h2{
+	text-align: center;
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+/* Add background to the text in the paragraph*/
+#example{
+		    background-image:url('questions.jpg');
+			background-size:fixed;
+			background-position: top;
+			background-repeat: no-repeat;
+			}
+/* Add style to all paragraphs*/
+p {
+	text-align: center;
+	word-spacing: 5px;
+	color: #ffffff;
+	font-size: 20px;
+	font: Times New Roman;
+	
+}
+/* Login and Registration Pages*/
+/* Style section for the text boxes where the user provides the input*/	
+input[type=text], input[type=password], input[type=number], input[type=date] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+/* Style section for the labels (username, email, password etc) on the login and registration page*/
+label {
+	width: 240px;
+	display: inline-block;
+	text-align: right;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+}
+/* Style section for the buttons*/
+button {
+  background-color: #000000;
+  color: white;
+  padding: 20px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: auto;
+  font-weight: bold;
+  box-shadow: 0px 5px 0px 0px #3C93D5;
+}
+
+/* Style section for the container on the login and registration pages*/
+.container {
+	background-image:url('qp.jpg');
+	padding: 50px;
+	position: relative;
+	width:50%;
+	margin-bottom: 10%;
+	margin-top: 10%;
+	height:50%;
+}
+/* End style section for the login and registration pages*/
+/*Rankings*/
+/* Style section for the table*/
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  border:
+}
+/* Style section for the table data and headings in the table*/
+td, th {
+  border: 5px solid #000000;
+  text-align: left;
+  padding: 8px;
+}
+/* Style the odd numbered row in the table*/
+tr:nth-child(odd) {
+  background-color: white;
+}
+/* Style the even numbered row in the table*/
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+/* Add style to the footer*/
+footer {
+	text-align:center;
+	color: white;
+	background-color:  #655762 ;
+	font-weight: bold;
+}
