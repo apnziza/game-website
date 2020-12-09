@@ -1,0 +1,242 @@
+:root {
+  --primary-color: #303c42;
+  --secondary-color: #D6F8D6;
+  --tertiary-color: #8ea39a;
+  --quaternary-color: #302e35;
+  --hover-color: #4e616b;
+  --shadow-color:rgba(57, 127, 93, 0.4);
+  --font-style: 'Questrial';
+}
+
+body {
+  font-family: var(--font-style), 'Ranchers', cursive;
+  background-color: #DFDBE5;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='192' height='192' viewBox='0 0 192 192'%3E%3Cpath fill='%239C92AC' fill-opacity='0.56' d='M192 15v2a11 11 0 0 0-11 11c0 1.94 1.16 4.75 2.53 6.11l2.36 2.36a6.93 6.93 0 0 1 1.22 7.56l-.43.84a8.08 8.08 0 0 1-6.66 4.13H145v35.02a6.1 6.1 0 0 0 3.03 4.87l.84.43c1.58.79 4 .4 5.24-.85l2.36-2.36a12.04 12.04 0 0 1 7.51-3.11 13 13 0 1 1 .02 26 12 12 0 0 1-7.53-3.11l-2.36-2.36a4.93 4.93 0 0 0-5.24-.85l-.84.43a6.1 6.1 0 0 0-3.03 4.87V143h35.02a8.08 8.08 0 0 1 6.66 4.13l.43.84a6.91 6.91 0 0 1-1.22 7.56l-2.36 2.36A10.06 10.06 0 0 0 181 164a11 11 0 0 0 11 11v2a13 13 0 0 1-13-13 12 12 0 0 1 3.11-7.53l2.36-2.36a4.93 4.93 0 0 0 .85-5.24l-.43-.84a6.1 6.1 0 0 0-4.87-3.03H145v35.02a8.08 8.08 0 0 1-4.13 6.66l-.84.43a6.91 6.91 0 0 1-7.56-1.22l-2.36-2.36A10.06 10.06 0 0 0 124 181a11 11 0 0 0-11 11h-2a13 13 0 0 1 13-13c2.47 0 5.79 1.37 7.53 3.11l2.36 2.36a4.94 4.94 0 0 0 5.24.85l.84-.43a6.1 6.1 0 0 0 3.03-4.87V145h-35.02a8.08 8.08 0 0 1-6.66-4.13l-.43-.84a6.91 6.91 0 0 1 1.22-7.56l2.36-2.36A10.06 10.06 0 0 0 107 124a11 11 0 0 0-22 0c0 1.94 1.16 4.75 2.53 6.11l2.36 2.36a6.93 6.93 0 0 1 1.22 7.56l-.43.84a8.08 8.08 0 0 1-6.66 4.13H49v35.02a6.1 6.1 0 0 0 3.03 4.87l.84.43c1.58.79 4 .4 5.24-.85l2.36-2.36a12.04 12.04 0 0 1 7.51-3.11A13 13 0 0 1 81 192h-2a11 11 0 0 0-11-11c-1.94 0-4.75 1.16-6.11 2.53l-2.36 2.36a6.93 6.93 0 0 1-7.56 1.22l-.84-.43a8.08 8.08 0 0 1-4.13-6.66V145H11.98a6.1 6.1 0 0 0-4.87 3.03l-.43.84c-.79 1.58-.4 4 .85 5.24l2.36 2.36a12.04 12.04 0 0 1 3.11 7.51A13 13 0 0 1 0 177v-2a11 11 0 0 0 11-11c0-1.94-1.16-4.75-2.53-6.11l-2.36-2.36a6.93 6.93 0 0 1-1.22-7.56l.43-.84a8.08 8.08 0 0 1 6.66-4.13H47v-35.02a6.1 6.1 0 0 0-3.03-4.87l-.84-.43c-1.59-.8-4-.4-5.24.85l-2.36 2.36A12 12 0 0 1 28 109a13 13 0 1 1 0-26c2.47 0 5.79 1.37 7.53 3.11l2.36 2.36a4.94 4.94 0 0 0 5.24.85l.84-.43A6.1 6.1 0 0 0 47 84.02V49H11.98a8.08 8.08 0 0 1-6.66-4.13l-.43-.84a6.91 6.91 0 0 1 1.22-7.56l2.36-2.36A10.06 10.06 0 0 0 11 28 11 11 0 0 0 0 17v-2a13 13 0 0 1 13 13c0 2.47-1.37 5.79-3.11 7.53l-2.36 2.36a4.94 4.94 0 0 0-.85 5.24l.43.84A6.1 6.1 0 0 0 11.98 47H47V11.98a8.08 8.08 0 0 1 4.13-6.66l.84-.43a6.91 6.91 0 0 1 7.56 1.22l2.36 2.36A10.06 10.06 0 0 0 68 11 11 11 0 0 0 79 0h2a13 13 0 0 1-13 13 12 12 0 0 1-7.53-3.11l-2.36-2.36a4.93 4.93 0 0 0-5.24-.85l-.84.43A6.1 6.1 0 0 0 49 11.98V47h35.02a8.08 8.08 0 0 1 6.66 4.13l.43.84a6.91 6.91 0 0 1-1.22 7.56l-2.36 2.36A10.06 10.06 0 0 0 85 68a11 11 0 0 0 22 0c0-1.94-1.16-4.75-2.53-6.11l-2.36-2.36a6.93 6.93 0 0 1-1.22-7.56l.43-.84a8.08 8.08 0 0 1 6.66-4.13H143V11.98a6.1 6.1 0 0 0-3.03-4.87l-.84-.43c-1.59-.8-4-.4-5.24.85l-2.36 2.36A12 12 0 0 1 124 13a13 13 0 0 1-13-13h2a11 11 0 0 0 11 11c1.94 0 4.75-1.16 6.11-2.53l2.36-2.36a6.93 6.93 0 0 1 7.56-1.22l.84.43a8.08 8.08 0 0 1 4.13 6.66V47h35.02a6.1 6.1 0 0 0 4.87-3.03l.43-.84c.8-1.59.4-4-.85-5.24l-2.36-2.36A12 12 0 0 1 179 28a13 13 0 0 1 13-13zM84.02 143a6.1 6.1 0 0 0 4.87-3.03l.43-.84c.8-1.59.4-4-.85-5.24l-2.36-2.36A12 12 0 0 1 83 124a13 13 0 1 1 26 0c0 2.47-1.37 5.79-3.11 7.53l-2.36 2.36a4.94 4.94 0 0 0-.85 5.24l.43.84a6.1 6.1 0 0 0 4.87 3.03H143v-35.02a8.08 8.08 0 0 1 4.13-6.66l.84-.43a6.91 6.91 0 0 1 7.56 1.22l2.36 2.36A10.06 10.06 0 0 0 164 107a11 11 0 0 0 0-22c-1.94 0-4.75 1.16-6.11 2.53l-2.36 2.36a6.93 6.93 0 0 1-7.56 1.22l-.84-.43a8.08 8.08 0 0 1-4.13-6.66V49h-35.02a6.1 6.1 0 0 0-4.87 3.03l-.43.84c-.79 1.58-.4 4 .85 5.24l2.36 2.36a12.04 12.04 0 0 1 3.11 7.51A13 13 0 1 1 83 68a12 12 0 0 1 3.11-7.53l2.36-2.36a4.93 4.93 0 0 0 .85-5.24l-.43-.84A6.1 6.1 0 0 0 84.02 49H49v35.02a8.08 8.08 0 0 1-4.13 6.66l-.84.43a6.91 6.91 0 0 1-7.56-1.22l-2.36-2.36A10.06 10.06 0 0 0 28 85a11 11 0 0 0 0 22c1.94 0 4.75-1.16 6.11-2.53l2.36-2.36a6.93 6.93 0 0 1 7.56-1.22l.84.43a8.08 8.08 0 0 1 4.13 6.66V143h35.02z'%3E%3C/path%3E%3C/svg%3E");
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  font-size: 3.5rem;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.mt30 {
+  margin-top: 30px;
+}
+
+.header {
+  padding: 15px;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  position:fixed;
+  bottom:0;
+  left:0;
+  width:100%;
+  height: 70px;
+}
+
+.settings {
+
+  z-index: 1;
+}
+
+.final {
+  visibility: hidden;
+  z-index: 2;
+}
+
+.final p {
+  font-size: 30px;
+  text-align: center;
+}
+
+.final h4 {
+  font-size: 33px;
+  text-align: center;
+}
+
+.quiz  {
+  visibility: hidden;
+  z-index: 0;
+}
+
+#questions {
+  font-size: 20px;
+  font-family: var(--font-style), 'Ranchers', cursive;
+  font-weight: 600;
+  line-height: 1.3;
+  color: white;
+  background-color: var(--primary-color);
+  appearance: none;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  margin-left: 30px;
+  outline: none;
+  text-align: center;
+  width: 120px;
+}
+.settings select {
+  font-size: 20px;
+  font-family: var(--font-style), 'Ranchers', cursive;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: 1px;
+  color: white;
+  background-color: var(--primary-color);
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  margin-left: 20px;
+  outline: none;
+  text-align: center;
+}
+
+.settings select::-ms-expand {
+  display: none;
+}
+
+.settings select:hover {
+  border-color: var(--hover-color);
+}
+
+.settings select:focus {
+  border-color: var(--hover-color);
+}
+
+.settings select option {
+  /* font-weight: bolder; */
+  font-family: var(--font-style), 'Ranchers', sans-serif;
+}
+
+.settings label {
+  font-size: 25px;
+  margin-right: 16px;
+}
+
+
+.quiz, .settings, .final {
+  position: absolute;
+  padding: 0px 35px 35px 35px;
+  max-width: 560px;
+  background-color: var(--tertiary-color);
+  border-radius: 7px;
+  -webkit-box-shadow: 10px 10px 3px -4px var(--shadow-color);
+  -moz-box-shadow: 10px 10px 3px -4px var(--shadow-color);
+  box-shadow: 10px 10px 5px -4px var(--shadow-color);
+}
+
+h3 {
+  display: block;
+  width: 550px;
+  font-size: 35px;
+  font-weight: 350;
+  word-wrap: break-word;
+}
+
+.submit {
+  width: 100%;
+  color: white;
+  background-color: var(--primary-color);
+  font-family: var(--font-style), 'Ranchers', cursive;
+  outline: none;
+  border: none;
+  height: 50px;
+  font-size: 1.8rem;
+  margin-top: 20px;
+  border-radius: 5px;
+  letter-spacing: 2px;
+}
+
+.submit:hover {
+  background-color: var(--hover-color);
+  cursor: pointer;
+  color: black;
+}
+
+/* The container */
+.count {
+  display: block;
+  left: 75%;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 100px;
+  cursor: pointer;
+}
+
+.count p {
+  position: absolute;
+  font-size: 35px;
+  
+}
+
+.total {
+  margin-left: 50px;
+}
+
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 25px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: -2px;
+  left: 0px;
+  height: 25px;
+  width: 25px;
+  background-color: white;
+  border-radius: 30%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: black;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: var(--quaternary-color);
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}

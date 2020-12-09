@@ -1,55 +1,85 @@
-<!DOCTYPE html> 
-	<html>
-	<head>
-		<title> Wonder Games </title>
-		<!-- Link to external style sheet -->
-		<link href="css/stylesheet1.css" type="text/css" rel="stylesheet">
-	</head>
-		
-	<body>
-		<!-- Displays the navigation bar and the banner -->
-		<div class="banner">
-			<img src="css/1.PNG" alt="Logo"/>
-			<h1> Quiz Time </h1>
-		</div>
-		<div class="navigation">
-			<a class="selected" href="HomePage.html"> Home </a>
-			<a href="ranking.html"> Ranking </a>
-			<a href="login.html"> Login </a>
-			<a href="register.html"> Register </a>
-		</div>
-		<!-- Contents of the page -->
-		<!-- Start of slide show container -->
-		<div class="slideshow-container">
-
-		<div class="mySlides fade">
-		<center>  <img src="imagesfolder/image1.png" style="width:600px;height:250px;"> </center>
-		</div>
-
-		<div class="mySlides fade">
-		<center> <img src="imagesfolder/image2.png" style="width:600px;height:250px;"> </center>
-		</div>
-
-		<div class="mySlides fade">
-		<center>  <img src="imagesfolder/image3.png" style="width:600px;height:250px;"> </center>
-		</div>
-
-		</div>
-		<br>
-
-		<div style="text-align:center">
-		  <span class="dot"></span> 
-		  <span class="dot"></span> 
-		  <span class="dot"></span> 
-		</div>
-		<script src = "js/slideshow.js"></script>
-		<h2> INSTRUCTIONS! </h2>
-		<p> Welcome to Quiz Time!
-		<br>Here you will find some fun filled, exciting and challenging questions <br> that will have you thinking for a while.
-		<br>There are only 15 questions that you need to answer.<br> The questions will involve multiple choice options, trivia, puzzles and even mazes!
-		<br>It may seem easy at the start but towards the ends...<br> it becomes a challenge.
-		<br>Please Register if you are new or Login if you are an existing member and start!</p>
-
-		<footer> Agnes Paullate Nyiranziza M00696201</footer>
-	</body>
-    </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Time</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main>
+    <div class="header">
+      <h2>Quiz Time</h2>
+    </div>
+    <div class="main">
+      <div class="final">
+        <h3>You answered all of the questions!</h3>
+        <p>Score: </p><p class="score"></p>
+        <h4>Want to try it again?</h4>
+        <button id="again" class="submit">Again</button>
+      </div>
+      <div class="quiz">
+        <div class="count">
+          <p class="current">0</p><p style="margin-left:40px"> / </p><p class="total"></p>
+        </div>
+        <h3 id="question"></h3>
+        <label id="a1" class="container">
+          <input type="radio" checked="checked" name="radio">
+          <span class="checkmark"></span>
+        </label>
+        <label id="a2" class="container">
+          <input type="radio" name="radio">
+          <span class="checkmark"></span>
+        </label>
+        <label id="a3" class="container">
+          <input type="radio" name="radio">
+          <span class="checkmark"></span>
+        </label>
+        <label id="a4" class="container">
+          <input type="radio" name="radio">
+          <span class="checkmark"></span>
+        </label>
+        <button id="next" class="submit">Submit</button>
+      </div>
+      <div class="settings">
+        <h3 style="text-align: center;">Set up your Quiz!</h3>
+        <label for="category">Category</label>
+        <select name="category" id="category">
+          <option value="9">General Knowledge</option>
+          <option value="27">Animals</option>
+          <option value="15">Video Games</option>
+          <option value="23">History</option>
+          <option value="21">Sports</option>
+        </select>
+        <div class="mt30">
+          <label for="difficulty">Difficulty</label>
+          <label class="container" style="display: inline; margin-left: 30px;">Easy
+            <input type="radio" name="radio" id="easy">
+            <span class="checkmark" style="margin-top: 2px;"></span>
+          </label>
+          <label class="container" style="display: inline; margin-left: 30px;">Medium
+            <input type="radio" name="radio" id="medium">
+            <span class="checkmark" style="margin-top: 2px;"></span>
+          </label>
+          <label  class="container" style="display: inline; margin-left: 30px;">Hard
+            <input type="radio" name="radio" id="hard">
+            <span class="checkmark" style="margin-top: 2px;"></span>
+          </label>
+        </div>
+        <div class="mt30">
+          <label for="questions">Number of questions</label>
+          <input name="questions" id="questions" type="text" pattern="[0-9]*" />
+        </div>  
+        <button id="start" class="submit">Start</button>
+      </div>  
+    </div>
+    <div class="footer">    
+      <div>
+        © 2020 | <b>Agnes Paullate Nyiranziza M00696201</b> All rights reserved
+      </div>
+    </div>
+  </main>
+  <script type="module" src="index.js"></script>
+</body>
+</html>
