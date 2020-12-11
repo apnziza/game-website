@@ -22,6 +22,21 @@ h2 {
   color: var(--primary-color);
 }
 
+#logout {
+  font-size: 1rem;
+  background: linear-gradient(to right,var(--primary-color),var(--quaternary-color));
+  border: 0;
+  outline: none;
+  border-radius: 30px;
+  color: white;
+  width: 10%;
+  padding: 10px 30px;
+  cursor: pointer;
+  position: relative;
+  left: 45%;
+  
+}
+
 .mt30 {
   margin-top: 30px;
 }

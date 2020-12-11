@@ -2,6 +2,7 @@ const x = document.getElementById('login');
 const y = document.getElementById('register');
 const z = document.getElementById('btn');
 const modal = document.getElementById('modal');
+const logOut = document.getElementById('logout');
 const loginBtn = document.getElementById('login-btn');
 const registerBtn = document.getElementById('register-btn');
 
@@ -32,7 +33,6 @@ const userPresent = (users) => {
   for(let i=0; i < users.length; i++){
     if (users[i].email === email.value){
       if (users[i].password === password.value) {
-        alert('Signed In Successfully!');
         result = true;
         break;
       }else {
@@ -52,9 +52,14 @@ const userPresent = (users) => {
 
 loginBtn.addEventListener('click', (e) => {
   e.preventDefault();
+  const email = document.getElementById('login-email');
+  const userID = {
+    userEmail: email.value
+  };
 
   if(userPresent(users)){
-    modal.style.visibility = 'hidden';
+    window.sessionStorage.setItem('userID', JSON.stringify(userID));
+    modal.style.display = 'none';
   }   
 
 });
@@ -80,9 +85,13 @@ registerBtn.addEventListener('click', (e) => {
     };
     users.push(user);
     window.localStorage.setItem('users', JSON.stringify(users));
-    modal.style.visibility = 'hidden';
+    modal.style.display = 'block';
   }
 
 });
 
+logOut.addEventListener('click',() => {
+  window.sessionStorage.clear();
+  modal.style.display = 'block';
+} );
 
