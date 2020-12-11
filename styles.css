@@ -22,7 +22,7 @@ h2 {
   color: var(--primary-color);
 }
 
-#logout {
+#logout, #scores {
   font-size: 1rem;
   background: linear-gradient(to right,var(--primary-color),var(--quaternary-color));
   border: 0;
@@ -33,7 +33,7 @@ h2 {
   padding: 10px 30px;
   cursor: pointer;
   position: relative;
-  left: 45%;
+  left: 40%;
   
 }
 
@@ -256,7 +256,7 @@ h3 {
   display: block;
 }
 
-#modal {
+#modal, #scores-board {
   margin: 0;
   padding: 0;
   height: 100vh;
@@ -267,6 +267,14 @@ h3 {
   position: absolute;
   z-index: 999;
 }
+
+#scores-board {
+  z-index: 998;
+  visibility: hidden;
+  font-size: 24px;
+  font-weight: bolder;
+}
+
 
 #modal .form-box {
   width: 380px;
@@ -305,6 +313,17 @@ h3 {
   height: 100%;
   background: linear-gradient(to right, var(--primary-color),var(--quaternary-color));
   border-radius: 50px;
+  transition: .5s;
+}
+
+#close-scores {
+  bottom: 25%;
+  right: 50%;
+  position: absolute;
+  width: 80px;
+  height: 50px;
+  background: linear-gradient(to right, var(--primary-color),var(--quaternary-color));
+  border-radius: 25px;
   transition: .5s;
 }
 
@@ -356,3 +375,17 @@ h3 {
 #register {
   left: 450px;
 }
+
+#scores-display {
+  width: 50%;
+  height: 65%;
+  margin: auto;
+  background-color: #D6F8D6;
+}
+
+#scores-display, h3 {
+  width: 40%;
+  margin: auto;
+}
+
+

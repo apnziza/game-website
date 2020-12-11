@@ -31,10 +31,19 @@
       </form>
     </div>
   </div>
+  <div id="scores-board">
+    <div id="scores-display">
+      <h3>Game Scores</h3>
+      <button id="close-scores">Close</button>
+    </div>
+  </div>
   <main>
     <div class="header">
       <h2>Quiz Time</h2>
-      <button id="logout">Logout</button>
+      <div class="header-buttons">
+        <button id="logout">Logout</button>
+        <button id="scores">Scores</button>
+      </div>
     </div>
     <div class="main">
 
@@ -106,6 +115,7 @@
     </div>
   </main>
   <script src="./quiz/register.js"></script>
+  <script src="./quiz/scores.js"></script>
   <script type="module" src="index.js"></script>
 </body>
 </html>

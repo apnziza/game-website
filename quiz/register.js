@@ -13,6 +13,12 @@ if (currentUsers !== null){
   users = [...currentUsers];
 }
 
+let scores = [];
+let currentScores = JSON.parse(window.localStorage.getItem('scores'));
+if (currentScores !== null){
+  scores = [...currentScores];
+}
+
 const register = () => {
   x.style.left = '-400px';
   y.style.left = '50px';
