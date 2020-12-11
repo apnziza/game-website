@@ -80,6 +80,14 @@ registerBtn.addEventListener('click', (e) => {
   if (password.value !== confirmPassword.value) {
     alert("Confirm password and the password should be the same!");
     return;
+  } else if (
+      firstName.value.trim() === "" || 
+      lastName.value.trim() === "" || 
+      email.value.trim() === "" ||
+      password.value.trim() === ""
+      ) {
+          alert("Please don't submit blank fields!");
+          return;
   } else {
     const user = {
       firstName: firstName.value,
