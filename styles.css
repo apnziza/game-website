@@ -378,12 +378,12 @@ h3 {
 
 #scores-display {
   width: 50%;
-  height: 65%;
+  height: 85%;
   margin: auto;
   background-color: #D6F8D6;
 }
 
-#scores-display, h3 {
+#scores-display h3 {
   width: 40%;
   margin: auto;
 }
