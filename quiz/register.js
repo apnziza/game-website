@@ -73,6 +73,10 @@ registerBtn.addEventListener('click', (e) => {
   const password = document.getElementById('register-password');
   const confirmPassword = document.getElementById('confirm-password');
 
+  const userID = {
+    userEmail: email.value
+  };
+
   if (password.value !== confirmPassword.value) {
     alert("Confirm password and the password should be the same!");
     return;
@@ -84,8 +88,9 @@ registerBtn.addEventListener('click', (e) => {
       password : password.value
     };
     users.push(user);
+    window.sessionStorage.setItem('userID', JSON.stringify(userID));
     window.localStorage.setItem('users', JSON.stringify(users));
-    modal.style.display = 'block';
+    modal.style.display = 'none';
   }
 
 });
