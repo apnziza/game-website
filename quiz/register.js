@@ -53,6 +53,12 @@ const userPresent = (users) => {
 loginBtn.addEventListener('click', (e) => {
   e.preventDefault();
   const email = document.getElementById('login-email');
+  const password = document.getElementById('login-password');
+
+  if ( email.value.trim() === "" || password.value.trim() === "" ) {
+    alert("Please don't submit blank fields!");
+    return;
+  }
   const userID = {
     userEmail: email.value
   };
