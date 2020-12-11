@@ -1,8 +1,10 @@
-let x = document.getElementById('login');
-let y = document.getElementById('register');
-let z = document.getElementById('btn');
-let modal = document.getElementById('modal');
-let loginBtn = document.getElementById('login-btn');
+const x = document.getElementById('login');
+const y = document.getElementById('register');
+const z = document.getElementById('btn');
+const modal = document.getElementById('modal');
+const loginBtn = document.getElementById('login-btn');
+const registerBtn = document.getElementById('register-btn');
+
 
 let users = [];
 let currentUsers = JSON.parse(window.localStorage.getItem('users'));
@@ -48,19 +50,39 @@ const userPresent = (users) => {
   return result;
 };
 
-loginBtn.addEventListener('click', () => {
-  
-  // if(userPresent(users)){
-  // } else {
-  //   modal.style.visibility = 'visible';
-  // }
-  modal.style.visibility = 'hidden';
-  
-  
+loginBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+
+  if(userPresent(users)){
+    modal.style.visibility = 'hidden';
+  }   
 
 });
 
-const submitRegistration = () => {
+registerBtn.addEventListener('click', (e) => {
+  e.preventDefault();
 
-};
+  const firstName = document.getElementById('first-name');
+  const lastName = document.getElementById('last-name');
+  const email = document.getElementById('register-email');
+  const password = document.getElementById('register-password');
+  const confirmPassword = document.getElementById('confirm-password');
+
+  if (password.value !== confirmPassword.value) {
+    alert("Confirm password and the password should be the same!");
+    return;
+  } else {
+    const user = {
+      firstName: firstName.value,
+      lastName : lastName.value,
+      email : email.value,
+      password : password.value
+    };
+    users.push(user);
+    window.localStorage.setItem('users', JSON.stringify(users));
+    modal.style.visibility = 'hidden';
+  }
+
+});
+
 
